@@ -66,7 +66,7 @@ print(confusionMatrix(pred, my.test$classe))
 ```
 
 #### Algorithm 2 - Random forrest
-Accuracy of tree model is not very satisfying. In order to improve it, random forest algorithm was applied. Out of sample error has been greatly reduced to 0.1%.
+Accuracy of tree model is not very satisfying. In order to improve it, random forest algorithm was applied. Out of sample error has been greatly reduced to 0.3%.
 ```{r}
 rf.fit <- train(classe ~., method="rf", data=my.train.final)
 print(rf.fit, digits=3)
