@@ -224,7 +224,7 @@ print(confusionMatrix(pred, my.test$classe))</code></pre>
 </div>
 <div id="algorithm-2---random-forrest" class="section level4">
 <h4>Algorithm 2 - Random forrest</h4>
-<p>Accuracy of tree model is not very satisfying. In order to improve it, random forest algorithm was applied. Out of sample error has been greatly reduced to 0.1%.</p>
+<p>Accuracy of tree model is not very satisfying. In order to improve it, random forest algorithm was applied. Out of sample error has been greatly reduced to 0.3%.</p>
 <pre class="r"><code>rf.fit &lt;- train(classe ~., method=&quot;rf&quot;, data=my.train.final)
 print(rf.fit, digits=3)</code></pre>
 <pre><code>## Random Forest 
